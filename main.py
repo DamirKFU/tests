@@ -1,5 +1,6 @@
 class Solution(object):
-    def romanToInt(self, s: int):
+    @staticmethod
+    def romanToInt(s: int):
         result = []
         rims = {
             1000: "M",
@@ -11,6 +12,7 @@ class Solution(object):
             50: "L",
             40: "XL",
             10: "X",
+            9: "IX",
             5: "V",
             4: "IV",
             1: "I",
@@ -21,8 +23,3 @@ class Solution(object):
                 result.append(res)
             s = s % i
         return "".join(result)
-
-
-
-d = Solution()
-print(d.romanToInt(4444))

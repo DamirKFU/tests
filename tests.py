@@ -5,7 +5,7 @@ from main import Solution
 class TestStringMethods(unittest.TestCase):
     def test_rims_fucntion(self):
         tests = [
-            (4444, "MMMMCDXLI"),
+            (4444, "MMMMCDXLIV"),
             (4, "IV"),
             (9, "IX"),
             (40, "XL"),
